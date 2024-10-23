@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <title>Sankalp Ashish</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/timeline.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.3/src/app/ci.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="https://code.iconify.design/3/3.0.1/iconify.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* .typed-cursor {
+            color: transparent;
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+        .progress-container {
+            width: 100%;
+            height: 5px;
+            /* border-radius: 100%; */
+            /* background: transparent;
+            position: fixed;
+            top: 65px; */
+            /* bottom: 0; */
+            /* left: 0;
+            z-index: 99;
+        } */
+        .progress-bar {
+            width:0px;
+            height: 100%;    
+            background: #00eeff;
+        }
+
+        .ball-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .ball {
+            border-radius: 50%;
+            animation: dance 15s infinite alternate;
+            position: absolute;
+        }
+
+        @keyframes dance {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(100vw, 100vh);
+            }
+        }
+
+        /* Generate multiple colorful balls */
+        .ball:nth-child(1) {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 0, 0, 0.7); /* Red */
+            animation-duration: 20s;
+        }
+
+        .ball:nth-child(2) {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(0, 255, 0, 0.7); /* Green */
+            animation-duration: 25s;
+            animation-delay: -5s;
+        }
+
+        .ball:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(0, 0, 255, 0.7); /* Blue */
+            animation-duration: 18s;
+            animation-delay: -10s;
+        }
+
+        .ball:nth-child(4) {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 0, 0.7); /* Yellow */
+            animation-duration: 22s;
+            animation-delay: -7s;
+        }
+
+        .ball:nth-child(5) {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255, 0, 255, 0.7); /* Magenta */
+            animation-duration: 19s;
+            animation-delay: -3s;
+        } */
+
+    </style>
+</head>
+
+<body class="bg-dark">
+  
+    <div class="topbar-fixed bg-dark">
+        <header class="container topbar d-flex bg-dark custom">
+            <input type="checkbox" name="open-close-menu" style="display:None;" id="open-close-menu" class="op" >
+            <label for="open-close-menu" class="menu-icon">
+                <span class="bar-1"></span>
+                <span class="bar-2"></span>
+                <span class="bar-3"></span>
+            </label>
+
+            <nav class="menu">
+                <ul class="menu-items d-flex">
+                    <li class="act menu-item"><a href="#home">Home</a></li>
+                    <li class="menu-item"><a href="#about">About</a></li>
+                    <li class="menu-item"><a href="#exp">Experience</a>
+                    </li>
+                    <li class="menu-item"><a href="#tech-skills">Skills</a>
+                    </li>
+                    <li class="menu-item"><a href="#projects">Projects</a>
+                    </li>
+                    <li class="menu-item"><a href="#links">Links</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+    </div>
+    
+    
+    <section id="home" class="container full-vh d-flex-col-center">
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="presentation text-6xl">
+            <span class="">Hello Everyone <img src="./images/wave-hello.gif" alt=""
+                style="width: 2em; margin-bottom: 20px; display:inline-flex;"> I am</span>
+                Sankalp Ashish<br>
+            <span id="iama">-I am good at</span>&nbsp;&nbsp;<span class="multiple-filed iam-job"></span>
+        </div>
+        <div class="presentation1">
+            <img class="avatar rotimg hoverimg" id="img" src="./images/my_img.jpg" alt="Img.." loading="lazy">
+        </div>
+
+        <a href="#about" class="arrow-icon"><span class="iconify" data-rotate="90deg">👇</span></a>
+    </section>
+    <div class="custom-op">
+        <section id="about" class="container full-vh d-flex-col-center">
+
+            <h2 class="title-section">About</h2>
+            <span class="about-desc about-card bg-dark">
+                <P>I am a <strong class="highlight-blue">Competitive Programmer</strong> and <strong
+                        class="highlight-green">Full Stack Developer </strong>, currently pursuing B.Tech at <a href="https://iiitbh.ac.in/"
+                        class="link">Indian Institute of Information Technology Bhagalpur</a> with current CGPA of 8.59</P>
+                <p>
+                    Proficient in Nodejs,ExpressJs, HTML, CSS, TailwindCSS, Javascript and NoSQL databases like MonogoDb, Redis and also in SQL databases, I am passionate about innovation and
+                    aim to contribute to transformative tech projects with aim to solve real world problems and make people life easy.
+                </p>
+
+                <div class="cards project-cards d-flex">
+                    <div class="max-w-sm p-6 border border-gray-200 rounded-lg shadow bg-gray-800 border-gray-700">
+                        <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"/>
+                        </svg>
+                    
+                            <h5 class="mb-4 text-4xl font-semibold tracking-tight text-gray-900 dark:text-white">Codeforces</h5>
+                        
+                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Pupil on Codeforces with maximum rating of 1315</p>
+                        <a href="https://codeforces.com/profile/rise_of_gupta_empire" class="inline-flex font-medium items-center text-green-600 hover:underline">
+                            prince_dynamo
+                            <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="max-w-sm p-6 border border-gray-200 rounded-lg shadow bg-gray-800 border-gray-700">
+                        <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"/>
+                        </svg>
+                        
+                            <h5 class="mb-4 text-4xl font-semibold tracking-tight text-gray-900 dark:text-white">Codechef</h5>
+                        
+                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">4 star coder on Codechef with maximum rating of 1865</p>
+                        <a href="https://www.codechef.com/users/arjunmbt" class="inline-flex font-medium items-center text-purple-500 hover:underline">
+                            dynamo_04
+                            <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="max-w-sm p-6 border border-gray-200 rounded-lg shadow bg-gray-800 border-gray-700">
+                        <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"/>
+                        </svg>
+                        
+                            <h5 class="mb-4 text-4xl font-semibold tracking-tight text-gray-900 dark:text-white">Atcoder</h5>
+                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Brown Coder at Atcoder with maximum rating of 664</p>
+                        <a href="https://atcoder.jp/users/arjunMBT" class="inline-flex font-medium items-center text-yellow-800 hover:underline">
+                            dynamo_04
+                            <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="max-w-sm p-6 border border-gray-200 rounded-lg shadow bg-gray-800 border-gray-700">
+                        <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"/>
+                        </svg>
+                        
+                            <h5 class="mb-4 text-4xl font-semibold tracking-tight text-gray-900 dark:text-white">Leetcode</h5>
+                      
+                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Among top 3 percent at Leetcode with maximum rating of 1917</p>
+                        <a href="https://leetcode.com/u/arjunmbt/" class="inline-flex font-medium items-center text-yellow-400 hover:underline">
+                            dynamo_04
+                            <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    </div>
+
+    </div>
+    </section>
+    </div>
+
+    <section id="exp" class="col" class="container full-vh">
+
+        <h2 class="title-section" style="display: block; text-align: center;">Experience</h2>
+
+        <div class="contents">
+            <div class="box d-flex">
+                <div style="margin-top: 10px;" class="img">
+                    <img src="./images/images (1).jpg" style="border-radius: 4px;" width="200">
+                </div>
+                <div style="margin-left: 2%;">
+                    <h4 class="exp-date">May 2024 - Aug 2024</h4>
+                    <b class="exp-post">SDE Intern @ Save Solutions Pvt Ltd.</b>
+                    <p style="text-align: justify;"> 
+Developed a fullstack website for transferring a file in a secure manner and established connection between different sources. Pioneered a token based login portal for users and also developed an admin portal for monitoring the user and controlling the activities. 
+                    </p>
+                    <a href="https://www.linkedin.com/company/save-solutions-private-limited/posts/?feedView=all" class="inline-flex font-medium items-center text-yellow-800 hover:underline">
+                        Save Solutions Pvt Ltd.
+                        <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="tech-skills" class="container full-vh d-flex-col-center">
+        <h2 class="title-section">Skills</h2>
+        <div class="micro-cards skill-cards d-flex">
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <div><span class="iconify rot" data-icon="vscode-icons:file-type-python" data-width="40"
+                        data-height="40"></span></div>
+                <span>Python</span>
+            </div>
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <div><span class="iconify rot" data-icon="vscode-icons:file-type-c" data-width="40"
+                        data-height="40"></span></div>
+                <span>C</span>
+            </div>
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <div><span class="iconify rot" data-icon="vscode-icons:file-type-cpp" data-width="40"
+                        data-height="40"></span></div>
+                <span>C++</span>
+            </div>
+
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <div><span class="iconify rot" data-icon="logos:mysql" data-width="40" data-height="40"></span></div>
+                <span>MySQL</span>
+            </div>
+            
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <img class="rot"
+                    src="https://user-images.githubusercontent.com/25181517/117208740-bfb78400-adf5-11eb-97bb-09072b6bedfc.png"
+                    width="40" height="40">
+                <span>PostgreSQL</span>
+            </div>
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <img class="rot"
+                    src="https://github.com/marwin1991/profile-technology-icons/assets/136815194/82df4543-236b-4e45-9604-5434e3faab17"
+                    width="40" height="40">
+                <span>SQLite</span>
+            </div>
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <img class="rot"
+                    src="https://user-images.githubusercontent.com/25181517/182884177-d48a8579-2cd0-447a-b9a6-ffc7cb02560e.png"
+                    width="40" height="40">
+                <span>mongoDB</span>
+            </div>
+            
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <img class="rot"
+                    src="https://ml.globenewswire.com/Resource/Download/f6fe471f-e047-4b10-8520-e681a95c8670"
+                    width="40" height="40">
+                <span>Redis</span>
+            </div>
+           
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <div><span class="iconify rot" data-icon="vscode-icons:file-type-django" data-width="40"
+                        data-height="40"></span></div>
+                <span>Django</span>
+            </div>
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <div><span class="iconify rot" data-icon="vscode-icons:file-type-reactjs" data-width="40"
+                    data-height="40"></span></div>
+            <span>React</span>
+            </div>
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <div><span class="iconify rot" data-icon="logos:bootstrap" data-width="40" data-height="40"></span>
+                </div>
+                <span>Bootstrap</span>
+            </div>
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <div><span class="iconify rot" data-icon="vscode-icons:file-type-html" data-width="40"
+                        data-height="40"></span></div>
+                <span>HTML</span>
+            </div>
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <div><span class="iconify rot" data-icon="vscode-icons:file-type-css" data-width="40"
+                        data-height="40"></span></div>
+                <span>CSS</span>
+            </div>
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <div><span class="iconify rot" data-icon="logos:javascript" data-width="37" data-height="37"></span>
+                </div>
+                <span>Javascript</span>
+            </div>
+           
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <div><span class="iconify rot" data-icon="vscode-icons:file-type-git" data-width="40"
+                        data-height="40"></span></div>
+                <span>Git</span>
+            </div>
+            
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <img class="rot"
+                    src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png"
+                    width="40" height="40">
+                <span>Github</span>
+            </div>
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <img class="rot"
+                    src="https://github.com/marwin1991/profile-technology-icons/assets/76662862/2481dc48-be6b-4ebb-9e8c-3b957efe69fa"
+                    width="40" height="40">
+                <span>Linux</span>
+            </div>
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <img class="rot"
+                    src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png"
+                    width="40" height="40">
+                <span>VSCode</span>
+            </div>
+            <div class="micro-card skill-card d-flex-col-center hover">
+                <img class="rot"
+                    src="https://user-images.githubusercontent.com/25181517/183914128-3fc88b4a-4ac1-40e6-9443-9a30182379b7.png"
+                    width="40" height="40">
+                <span>Jupyter</span>
+            </div>
+        </div>
+    </section>
+    <div class="">
+        <section id="projects" class="container full-vh d-flex-col-center">
+            <h2 class="title-section">Projects</h2>
+            <div class="cards project-cards d-flex">
+            
+
+                <div class="card project-card">
+                    <a class="card-body d-flex-col" href="https://metal-not.vercel.app/" target="_blank">
+                        <h3 class="card-title">Flickpick</h3>
+                        <span class="mt-5">Skills:
+                            <i class="ci ci-python ci-2x"></i>
+                            
+                            <i class="ci ci-tailwindcss ci-2x"></i>
+                            <i class="ci ci-html ci-2x"></i>
+                            <i class="ci ci-css ci-2x"></i>
+                            <i class="ci ci-js ci-2x"></i>
+                        </span>
+                        <p class="mt-5">Incorporated a personalized movie recommendation system by seamlessly providing relevant movie suggestions based on individual tastes within the existing Streamlit interface. Achieved a 20% boost in recommendation precision by implementing machine learning algorithms for analyzing user preferences and movie attributes, utilizing advanced feature selection and vectorization methods.
+                            </p>
+                        <div class="card-footer d-flex space-between">
+                            
+                        </div>
+                    </a>
+                </div>
+                <br> <br>
+                <div class="card project-card">
+                    <a class="card-body d-flex-col" href="https://songnation.netlify.app/" target="_blank">
+                        <h3 class="card-title">ToneCraft: Beats in blood</h3>
+                        <span class="mt-5"> Skills:
+                            <i class="ci ci-python ci-2x"></i>
+                            
+                            <i class="ci ci-bootstrap ci-2x"></i>
+                            <i class="ci ci-html ci-2x"></i>
+                            <i class="ci ci-css ci-2x"></i>
+                            <i class="ci ci-js ci-2x"></i>
+                        </span>
+                        <p class="mt-5">Crafted an intuitive web application allowing users to search and stream music, boosting user engagement by 40%.Facilitated seamless communication by using Rapid API for comprehensive music details. Engineered an audio playback feature for users to preview and evaluate ringtones.
+                        </p>
+                        
+                    </a>
+                </div>
+                <br><br>
+                <div class="card project-card">
+                    <a href="https://replit.com/@AlbertEinstien3/campusease" class="card-body d-flex-col" target="_blank">
+                        <h3 class="card-title">CampusEase: Ease your life</h3>
+                        <span class="mt-5">Skills:
+                            <i class="ci ci-python ci-2x"></i>
+                            <i class="ci ci-postgresql ci-2x"></i>
+                            <i class="ci ci-tailwind ci-2x"></i>
+                            <i class="ci ci-html ci-2x"></i>
+                            <i class="ci ci-css ci-2x"></i>
+                            <i class="ci ci-js ci-2x"></i>
+                        </span>
+                        <p class="mt-5">CampusEase is a comprehensive web application designed to simplify campus life by providing various features like Loss and Found management, Buying and selling, online complaints, and functionalities for students and staff members.</p>
+                       
+                    </a>
+                </div>
+                <br>
+
+        </section>
+        <div style="margin-bottom: 1rem; display: flex; justify-content:center; " class="flex item-center"><a href="https://github.com/sankalp-ashish22?tab=repositories"
+            target="_blank"><button class="btn">Many More on Github</button></a></div>
+    </div>
+    <div class="bg-black">
+        <section id="links" class="container full-vh d-flex-col-center">
+            <h2 class="title-section">Connect with me on...</h2>
+            <div class="micro-cards link-cards d-flex gap">
+                <a class="micro-card link-card d-flex-col-center hover cv" href="https://github.com/sankalp-ashish22"
+                    target="_blank">
+                    <div><span class="iconify" id="icon-eye" data-icon="mdi:github" data-width="40"
+                            data-height="40"></span></div>
+                    <span>GitHub</span>
+                </a>
+                <a class="micro-card link-card d-flex-col-center hover cv"
+                    href="https://www.linkedin.com/in/sankalp-ashish-70ab3b231/" target="_blank">
+                    <div><span class="iconify" id="icon-eye" data-icon="mdi:linkedin" data-width="40"
+                            data-height="40"></span></div>
+                    <span>LinkedIn</span>
+                </a>
+                
+            </div>
+        </section>
+    </div>
+ <div class="ball-container">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.querySelectorAll(".menu-item").forEach(elem => {
+            elem.addEventListener("click", () => {
+                document.querySelector('#open-close-menu').checked = false;
+            })
+        });        
+    </script>
+    <script src="./script/download.js"></script>
+    <script src="./script/typed.js"></script>
+  
+</body>
+
+</html>
